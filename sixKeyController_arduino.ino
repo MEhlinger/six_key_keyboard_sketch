@@ -1,4 +1,4 @@
-#include "keyboard.h"
+#include <Keyboard.h>
 
 const int upButton = 2;
 const int downButton = 3;
@@ -24,7 +24,7 @@ void loop() {
   if (digitalRead(downButton) == HIGH) {
     Keyboard.write('KEY_DOWN_ARROW');
   }
-  if (digitalRead(leftButton) == HIGH) }
+  if (digitalRead(leftButton) == HIGH) {
     Keyboard.write('KEY_LEFT_ARROW');
   }
   if (digitalRead(rightButton) == HIGH) {
@@ -35,5 +35,5 @@ void loop() {
   }
   if (digitalRead(returnButton) == HIGH) {
     Keyboard.write('KEY_RETURN');
-
+  }
 }
